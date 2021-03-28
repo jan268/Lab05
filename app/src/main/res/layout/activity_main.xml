@@ -6,13 +6,49 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".MainActivity">
-    <TextView
+    <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Hello World!"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
+            android:inputType="textPersonName"
+            android:text="Name"
+            android:ems="10"
+            android:id="@+id/editTextNazwaZapisz"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="16dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="16dp"/>
+    <Button
+            android:text="Zapisz"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" android:id="@+id/przyciskZapisz"
+            android:layout_marginEnd="16dp" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp" app:layout_constraintStart_toEndOf="@+id/editTextNazwaZapisz"
+    />
+    <Button
+            android:text="Czytaj"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" android:id="@+id/przyciskCzytaj"
+            android:layout_marginEnd="16dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/przyciskZapisz"
+            android:layout_marginStart="16dp" app:layout_constraintStart_toEndOf="@+id/spinnerNazwaCzytaj"/>
+    <Spinner
+            android:layout_width="214dp"
+            android:layout_height="44dp" android:id="@+id/spinnerNazwaCzytaj"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/editTextNazwaZapisz"
+            app:layout_constraintStart_toStartOf="@id/editTextNazwaZapisz"
+            app:layout_constraintEnd_toEndOf="@id/editTextNazwaZapisz"/>
+    <EditText
+            android:layout_width="379dp"
+            android:layout_height="584dp"
+            android:inputType="textMultiLine"
+            android:gravity="start|top"
+            android:ems="10"
+            android:id="@+id/editTextNotatka"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/przyciskCzytaj" app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="16dp" android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="16dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
