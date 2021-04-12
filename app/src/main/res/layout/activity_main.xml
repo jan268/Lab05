@@ -39,16 +39,18 @@
             app:layout_constraintStart_toStartOf="@id/editTextNazwaZapisz"
             app:layout_constraintEnd_toEndOf="@id/editTextNazwaZapisz"/>
     <EditText
-            android:layout_width="379dp"
-            android:layout_height="584dp"
+            android:layout_width="304dp"
+            android:layout_height="368dp"
             android:inputType="textMultiLine"
             android:gravity="start|top"
             android:ems="10"
             android:id="@+id/editTextNotatka"
             android:layout_marginTop="16dp"
-            app:layout_constraintTop_toBottomOf="@+id/przyciskCzytaj" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/przyciskCzytaj"
+            app:layout_constraintBottom_toBottomOf="parent"
             android:layout_marginBottom="16dp" android:layout_marginEnd="16dp"
-            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             android:layout_marginStart="16dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
